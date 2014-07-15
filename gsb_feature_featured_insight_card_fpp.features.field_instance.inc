@@ -20,13 +20,13 @@ function gsb_feature_featured_insight_card_fpp_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 2,
+        'weight' => 3,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -104,14 +104,15 @@ function gsb_feature_featured_insight_card_fpp_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
           'conditions' => array(),
-          'link' => FALSE,
+          'links' => 0,
+          'view_mode' => 'insight_featured_card',
         ),
-        'type' => 'entityreference_label',
-        'weight' => 0,
+        'type' => 'entityreference_entity_view',
+        'weight' => 2,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -149,13 +150,13 @@ function gsb_feature_featured_insight_card_fpp_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 0,
       ),
     ),
     'ds_extras_field_template' => '',

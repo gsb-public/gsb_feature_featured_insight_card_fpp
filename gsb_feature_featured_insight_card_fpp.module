@@ -1,4 +1,10 @@
 <?php
+/**
+ * @file
+ * Code for the GSB Feature Featured Insight Card FPP feature.
+ */
+
+include_once 'gsb_feature_featured_insight_card_fpp.features.inc';
 
 /**
  * Implements hook_entity_alter().
