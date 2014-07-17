@@ -27,7 +27,8 @@ function gsb_feature_featured_insight_card_fpp_form_alter(&$form, &$form_state) 
   if (in_array($form['#form_id'], array(
       'fieldable_panels_panes_entity_edit_form',
       'fieldable_panels_panes_fieldable_panels_pane_content_type_edit_form',
-    ))) {
+    )) && $form['#bundle'] == 'featured_insight_card') {
+
     // Hide reusable checkbox instead of #access = FALSE to preserve fieldset display.
     $form['reusable']['reusable']['#attributes']['style'] = 'display:none;';
     $form['reusable']['reusable']['#suffix'] = t('This FPP is reusable and can\'t be changed');
