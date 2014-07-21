@@ -163,7 +163,7 @@ function gsb_feature_featured_insight_card_fpp_field_default_field_instances() {
     'entity_type' => 'fieldable_panels_pane',
     'field_name' => 'field_title',
     'label' => 'Superhead',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'better_formats' => array(
         'allowed_formats' => array(
