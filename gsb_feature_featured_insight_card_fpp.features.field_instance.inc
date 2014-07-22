@@ -26,7 +26,7 @@ function gsb_feature_featured_insight_card_fpp_field_default_field_instances() {
           'conditions' => array(),
         ),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 2,
       ),
     ),
     'ds_extras_field_template' => '',
@@ -89,13 +89,13 @@ function gsb_feature_featured_insight_card_fpp_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 3,
+      'weight' => 4,
     ),
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'fieldable_panels_pane-featured_insight_card-field_existing_node_fpp_ref'
-  $field_instances['fieldable_panels_pane-featured_insight_card-field_existing_node_fpp_ref'] = array(
+  // Exported field_instance: 'fieldable_panels_pane-featured_insight_card-field_featured_insight_card_ref'
+  $field_instances['fieldable_panels_pane-featured_insight_card-field_featured_insight_card_ref'] = array(
     'bundle' => 'featured_insight_card',
     'custom_add_another' => '',
     'custom_remove' => '',
@@ -112,12 +112,12 @@ function gsb_feature_featured_insight_card_fpp_field_default_field_instances() {
           'view_mode' => 'insight_featured_card',
         ),
         'type' => 'entityreference_entity_view',
-        'weight' => 2,
+        'weight' => 1,
       ),
     ),
     'ds_extras_field_template' => '',
     'entity_type' => 'fieldable_panels_pane',
-    'field_name' => 'field_existing_node_fpp_ref',
+    'field_name' => 'field_featured_insight_card_ref',
     'label' => 'Existing Node Title',
     'required' => 0,
     'settings' => array(
@@ -135,7 +135,7 @@ function gsb_feature_featured_insight_card_fpp_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 2,
+      'weight' => 3,
     ),
     'workbench_access_field' => 0,
   );

@@ -30,7 +30,7 @@ function gsb_feature_featured_insight_card_fpp_ds_field_settings_info() {
         ),
       ),
     ),
-    'field_existing_node_fpp_ref' => array(
+    'field_title' => array(
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
@@ -43,7 +43,7 @@ function gsb_feature_featured_insight_card_fpp_ds_field_settings_info() {
         ),
       ),
     ),
-    'field_title' => array(
+    'field_featured_insight_card_ref' => array(
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
@@ -79,13 +79,13 @@ function gsb_feature_featured_insight_card_fpp_ds_layout_settings_info() {
     'regions' => array(
       'ds_content' => array(
         0 => 'field_title',
-        1 => 'field_existing_node_fpp_ref',
+        1 => 'field_featured_insight_card_ref',
         2 => 'field_editorial_summary',
       ),
     ),
     'fields' => array(
       'field_title' => 'ds_content',
-      'field_existing_node_fpp_ref' => 'ds_content',
+      'field_featured_insight_card_ref' => 'ds_content',
       'field_editorial_summary' => 'ds_content',
     ),
     'classes' => array(),
