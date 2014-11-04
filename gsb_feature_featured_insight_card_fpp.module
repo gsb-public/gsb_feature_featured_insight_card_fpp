@@ -34,11 +34,6 @@ function gsb_feature_featured_insight_card_fpp_form_alter(&$form, &$form_state) 
       'fieldable_panels_panes_fieldable_panels_pane_content_type_edit_form',
     )) && $form['#bundle'] == 'featured_insight_card') {
 
-    // Hide reusable checkbox instead of #access = FALSE to preserve fieldset display.
-    $form['reusable']['reusable']['#attributes']['style'] = 'display:none;';
-    $form['reusable']['reusable']['#suffix'] = t('This FPP is reusable and can\'t be changed');
-    $form['reusable']['reusable']['#value'] = 1;
-
     $form['reusable']['admin_title']['#default_value'] = !empty($form['reusable']['admin_title']['#default_value']) ? $form['reusable']['admin_title']['#default_value'] : t('Featured Insight Card item: ');
     $form['reusable']['category']['#default_value'] = !empty($form['reusable']['category']['#default_value']) ? $form['reusable']['category']['#default_value'] : 'Marketing'; 
   }
