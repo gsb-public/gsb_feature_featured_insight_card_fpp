@@ -11,7 +11,7 @@ include_once 'gsb_feature_featured_insight_card_fpp.features.inc';
  */
 function gsb_feature_featured_insight_card_fpp_entity_info_alter(&$entity_info) {
   $entity_info['fieldable_panels_pane']['bundles']['featured_insight_card'] = array(
-    'label' => t('Featured Insight Card'),
+    'label' => t('Insights: Featured Item'),
     'pane category' => t('GSB panes'),
     'pane top level' => TRUE, // set to true to make this show as a top level icon
     'admin' => array(
