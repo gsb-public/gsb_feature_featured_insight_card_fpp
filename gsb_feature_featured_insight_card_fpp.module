@@ -32,7 +32,7 @@ function gsb_feature_featured_insight_card_fpp_form_alter(&$form, &$form_state) 
   if (in_array($form['#form_id'], array(
       'fieldable_panels_panes_entity_edit_form',
       'fieldable_panels_panes_fieldable_panels_pane_content_type_edit_form',
-    )) && $form['#bundle'] == 'featured_insight_card') {
+    )) && !empty($form['#bundle']) && $form['#bundle'] == 'featured_insight_card') {
 
     $form['reusable']['admin_title']['#default_value'] = !empty($form['reusable']['admin_title']['#default_value']) ? $form['reusable']['admin_title']['#default_value'] : t('Featured Insight Card item: ');
     $form['reusable']['category']['#default_value'] = !empty($form['reusable']['category']['#default_value']) ? $form['reusable']['category']['#default_value'] : 'Marketing'; 
