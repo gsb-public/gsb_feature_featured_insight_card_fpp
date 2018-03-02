@@ -10,7 +10,8 @@
 function gsb_feature_featured_insight_card_fpp_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'fieldable_panels_pane-featured_insight_card-field_editorial_summary'
+  // Exported field_instance:
+  // 'fieldable_panels_pane-featured_insight_card-field_editorial_summary'.
   $field_instances['fieldable_panels_pane-featured_insight_card-field_editorial_summary'] = array(
     'bundle' => 'featured_insight_card',
     'custom_add_another' => '',
@@ -94,7 +95,8 @@ function gsb_feature_featured_insight_card_fpp_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'fieldable_panels_pane-featured_insight_card-field_featured_insight_card_ref'
+  // Exported field_instance:
+  // 'fieldable_panels_pane-featured_insight_card-field_featured_insight_card_ref'.
   $field_instances['fieldable_panels_pane-featured_insight_card-field_featured_insight_card_ref'] = array(
     'bundle' => 'featured_insight_card',
     'custom_add_another' => '',
@@ -105,10 +107,11 @@ function gsb_feature_featured_insight_card_fpp_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'entityreference',
+        'module' => 'gsb_feature_existing_node_list_fpp',
         'settings' => array(
           'conditions' => array(),
           'links' => 0,
+          'use_content_language' => TRUE,
           'view_mode' => 'insight_featured_card',
         ),
         'type' => 'entityreference_entity_view',
@@ -140,7 +143,8 @@ function gsb_feature_featured_insight_card_fpp_field_default_field_instances() {
     'workbench_access_field' => 0,
   );
 
-  // Exported field_instance: 'fieldable_panels_pane-featured_insight_card-field_title'
+  // Exported field_instance:
+  // 'fieldable_panels_pane-featured_insight_card-field_title'.
   $field_instances['fieldable_panels_pane-featured_insight_card-field_title'] = array(
     'bundle' => 'featured_insight_card',
     'custom_add_another' => '',
